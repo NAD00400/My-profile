@@ -5,73 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nguyen Khuat Anh Duy - CV</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#f0f4ff',
+                            100: '#e0e9ff',
+                            200: '#c7d7fe',
+                            300: '#a5bffc',
+                            400: '#819cf8',
+                            500: '#6177f2',
+                            600: '#4655e6',
+                            700: '#3a43cb',
+                            800: '#3039a4',
+                            900: '#2d3782',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-50">
     <div class="min-h-screen md:flex">
         <!-- Left Column - Personal Info -->
-        <div class="md:w-1/4 bg-gradient-to-b from-blue-900 to-blue-800 p-8 text-white">
+         
+        <div class="md:w-1/4 bg-gradient-to-b from-navy-900 to-navy-800 p-8 text-white">
             <div class="text-center mb-8">
-                <!-- Replace 'avatar.jpg' with actual image path -->
-                <img src="./public/avatar.jpg" alt="Profile Photo" 
-                     class="w-full mx-auto border-4 border-blue-200 shadow-lg">
+                <!-- Profile Photo -->
+                <div class="w-full mx-auto overflow-hidden border-4 border-navy-300 shadow-lg">
+                    <img src="./public/avatar.jpg" alt="Profile Photo" class="w-full h-full object-cover">
+                </div>
             </div>
 
-            <h2 class="text-2xl font-bold mb-6 border-b-2 border-blue-300 pb-2">Personal Info</h2>
+            <h2 class="text-2xl font-bold mb-6 border-b-2 border-navy-300 pb-2">Personal Info</h2>
             
             <div class="space-y-4">
                 <div>
-                    <p class="font-semibold">Date of Birth</p>
-                    <p>04/02/2002</p>
+                    <p class="font-semibold text-navy-200">Date of Birth</p>
+                    <p class="text-white">04/02/2002</p>
                 </div>
                 <div>
-                    <p class="font-semibold">Gender</p>
-                    <p>Male</p>
+                    <p class="font-semibold text-navy-200">Gender</p>
+                    <p class="text-white">Male</p>
                 </div>
                 <div>
-                    <p class="font-semibold">Phone</p>
-                    <p>0368 196 092</p>
+                    <p class="font-semibold text-navy-200">Phone</p>
+                    <p class="text-white">0368 196 092</p>
                 </div>
                 <div>
-                    <p class="font-semibold">Email</p>
+                    <p class="font-semibold text-navy-200">Email</p>
                     <a href="mailto:anhduynguyenkhuat@gmail.com" 
-                       class="hover:text-blue-200 transition-colors">anhduynguyenkhuat@gmail.com</a>
+                       class="text-navy-100 hover:text-white transition-colors">anhduynguyenkhuat@gmail.com</a>
                 </div>
                 <div>
-                    <p class="font-semibold">Address</p>
-                    <p>489/10, Doan Van Bo Street,<br>Ward 13, District 4, HCMC</p>
+                    <p class="font-semibold text-navy-200">Address</p>
+                    <p class="text-white">489/10, Doan Van Bo Street,<br>Ward 13, District 4, HCMC</p>
                 </div>
                 <div>
-                    <p class="font-semibold">Github</p>
+                    <p class="font-semibold text-navy-200">Github</p>
                     <a href="https://github.com/NAD00400" 
-                       class="hover:text-blue-200 transition-colors">github.com/NAD00400</a>
+                       class="text-navy-100 hover:text-white transition-colors">github.com/NAD00400</a>
                 </div>
             </div>
         </div>
 
         <!-- Right Column - Content -->
-        <div class="md:w-4/5 bg-white p-8">
+        <div class="md:w-3/4 bg-white p-8 shadow-inner">
             <!-- Header -->
-            <div class="mb-12 flex justify-between items-center w-full  p-4">
-                <h1 class="text-4xl font-bold text-blue-900">Nguyen Khuat Anh Duy</h1>
-                <h2 class="text-2xl font-semibold text-white bg-blue-900 px-3 py-2">Web Development Intern</h2>
+            <div class="mb-12 flex flex-col md:flex-row justify-between items-start md:items-center w-full">
+                <h1 class="text-4xl font-bold text-navy-900 mb-2">Nguyen Khuat Anh Duy</h1>
+                <div class="bg-navy-700 text-white px-4 py-2 rounded-md shadow-md">
+                    <h2 class="text-xl font-semibold">Web Development</h2>
+                </div>
             </div>
 
             <!-- Sections -->
             <section class="mb-8">
-                <h3 class="text-xl font-bold text-blue-900 mb-4 border-b-2 border-blue-200 pb-2">TARGET</h3>
+                <h3 class="text-xl font-bold text-navy-800 mb-4 flex items-center">
+                    <span class="mr-3">TARGET</span>
+                    <span class="flex-1 border-b-2 border-navy-200"></span>
+                </h3>
                 <p class="text-gray-700 leading-relaxed">
                     My goal is to become an IT professional in the financial sector, constantly learning and improving my skills to build optimal, secure and efficient solutions. I hope to contribute to the development of financial technology by applying new technologies, improving systems and creating sustainable values.
                 </p>
             </section>
 
             <section class="mb-8">
-                <h3 class="text-xl font-bold text-blue-900 mb-4 border-b-2 border-blue-200 pb-2">EDUCATION</h3>
+                <h3 class="text-xl font-bold text-navy-800 mb-4 flex items-center">
+                    <span class="mr-3">EDUCATION</span>
+                    <span class="flex-1 border-b-2 border-navy-200"></span>
+                </h3>
                 <div class="space-y-4">
                     <h4 class="font-semibold text-gray-800">Saigon Technology University (STU)</h4>
                     <ul class="list-disc list-inside space-y-2 ml-4 text-gray-700">
                         <li>Information Technology Engineering Program</li>
                         <li>Elective subjects:
-                            <ul class="list-circle list-inside space-y-1 ml-6">
+                            <ul class="list-[circle] list-inside space-y-1 ml-6">
                                 <li>Web application programming with Apache/MySQL/PHP</li>
                                 <li>ASP.NET Core MVC & RESTful API development</li>
                                 <li>Basic AI applications for image recognition</li>
@@ -82,7 +120,10 @@
             </section>
 
             <section class="mb-8">
-                <h3 class="text-xl font-bold text-blue-900 mb-4 border-b-2 border-blue-200 pb-2">WORK EXPERIENCE</h3>
+                <h3 class="text-xl font-bold text-navy-800 mb-4 flex items-center">
+                    <span class="mr-3">WORK EXPERIENCE</span>
+                    <span class="flex-1 border-b-2 border-navy-200"></span>
+                </h3>
                 <div class="space-y-4">
                     <h4 class="font-semibold text-gray-800">Step Computer Academy Vietnam - Coding Teacher</h4>
                     <ul class="list-disc list-inside space-y-2 ml-4 text-gray-700">
@@ -92,49 +133,53 @@
                     </ul>
                 </div>
             </section>
+
             <!-- Accumulated Knowledge Section -->
             <section>
-                <h3 class="text-xl font-bold text-blue-900 mb-4 border-b-2 border-blue-200 pb-2">ACCUMULATED KNOWLEDGE</h3>
-                <div class="grid grid-cols-1 gap-6">
-                    <!-- Left Column -->
+                <h3 class="text-xl font-bold text-navy-800 mb-4 flex items-center">
+                    <span class="mr-3">ACCUMULATED KNOWLEDGE</span>
+                    <span class="flex-1 border-b-2 border-navy-200"></span>
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Column 1 -->
                     <div class="space-y-6">
-                        <div>
-                            <h4 class="font-semibold text-gray-800 mb-2">Programming Languages</h4>
-                            <ul class="list-disc list-inside ml-4 text-gray-700">
+                        <div class="bg-navy-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-navy-700 mb-2">Programming Languages</h4>
+                            <ul class="list-disc list-inside ml-4 text-gray-700 space-y-1">
                                 <li>JavaScript, TypeScript - Build flexible web applications with stability and scalability</li>
                             </ul>
                         </div>
 
-                        <div>
-                            <h4 class="font-semibold text-gray-800 mb-2">Frontend Development</h4>
-                            <ul class="list-disc list-inside ml-4 text-gray-700">
+                        <div class="bg-navy-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-navy-700 mb-2">Frontend Development</h4>
+                            <ul class="list-disc list-inside ml-4 text-gray-700 space-y-1">
                                 <li>React.js/Next.js - UI development</li>
                                 <li>Tailwind CSS/Ant Design - Modern, customizable interfaces</li>
                             </ul>
                         </div>
                     </div>
 
-                    <!-- Right Column -->
+                    <!-- Column 2 -->
                     <div class="space-y-6">
-                        <div>
-                            <h4 class="font-semibold text-gray-800 mb-2">Backend Development</h4>
-                            <ul class="list-disc list-inside ml-4 text-gray-700">
+                        <div class="bg-navy-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-navy-700 mb-2">Backend Development</h4>
+                            <ul class="list-disc list-inside ml-4 text-gray-700 space-y-1">
                                 <li>NestJS/Express.js - MVC pattern & modular APIs</li>
                                 <li>MongoDB (Mongoose)/PostgreSQL (Prisma) - Data management with ORM/ODM</li>
                             </ul>
                         </div>
 
-                        <div>
-                            <h4 class="font-semibold text-gray-800 mb-2">API & Data Communication</h4>
-                            <ul class="list-disc list-inside ml-4 text-gray-700">
+                        <div class="bg-navy-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-navy-700 mb-2">API & Data Communication</h4>
+                            <ul class="list-disc list-inside ml-4 text-gray-700 space-y-1">
                                 <li>RESTful API development</li>
                                 <li>Axios/Fetch API - Optimized data exchange</li>
                             </ul>
                         </div>
 
-                        <div>
-                            <h4 class="font-semibold text-gray-800 mb-2">DevOps & Deployment</h4>
-                            <ul class="list-disc list-inside ml-4 text-gray-700">
+                        <div class="bg-navy-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-navy-700 mb-2">DevOps & Deployment</h4>
+                            <ul class="list-disc list-inside ml-4 text-gray-700 space-y-1">
                                 <li>Vercel - Fullstack deployment</li>
                                 <li>Git/GitHub - Version control & collaboration</li>
                             </ul>
