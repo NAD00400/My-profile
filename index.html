@@ -31,11 +31,20 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .main-content {
+            flex: 1;
+        }
+        footer {
+            margin-top: auto;
         }
     </style>
 </head>
 <body class="bg-gray-50">
-    <div class="min-h-screen md:flex">
+    <div class="main-content min-h-screen md:flex">
         <!-- Left Column - Personal Info -->
          
         <div class="md:w-1/4 bg-gradient-to-b from-navy-900 to-navy-800 p-8 text-white">
@@ -76,6 +85,7 @@
                        class="text-navy-100 hover:text-white transition-colors">github.com/NAD00400</a>
                 </div>
             </div>
+
         </div>
 
         <!-- Right Column - Content -->
@@ -124,7 +134,15 @@
                     <span class="mr-3">WORK EXPERIENCE</span>
                     <span class="flex-1 border-b-2 border-navy-200"></span>
                 </h3>
-                <div class="space-y-4">
+                <div class="space-y-4 mb-4">
+                    <h4 class="font-semibold text-gray-800">Brightchamps - Coding Teacher</h4>
+                    <ul class="list-disc list-inside space-y-2 ml-4 text-gray-700">
+                        <li>Teaching programming fundamentals (visual programming, Introduction to AI ,Coding)</li>
+                        <li>Guiding students through practical projects</li>
+                        <li>Monitoring progress and providing support</li>
+                    </ul>
+                </div>
+                <div class="space-y-4 mb-4">
                     <h4 class="font-semibold text-gray-800">Step Computer Academy Vietnam - Coding Teacher</h4>
                     <ul class="list-disc list-inside space-y-2 ml-4 text-gray-700">
                         <li>Teaching programming fundamentals (Python, Web Basics)</li>
@@ -132,8 +150,23 @@
                         <li>Monitoring progress and providing support</li>
                     </ul>
                 </div>
+                <div class="space-y-4 mb-4">
+                    <h4 class="font-semibold text-gray-800">Step Computer Academy Vietnam - sale intern</h4>
+                    <ul class="list-disc list-inside space-y-2 ml-4 text-gray-700">
+                        <li>Consulting, introducing courses suitable for students' needs</li>
+                        <li>Participate in supporting events or recruitment campaigns of the center</li>
+                        <li>Practice communication skills, handle situations and persuade customers</li>
+                    </ul>
+                </div>
+                <div class="space-y-4 mb-4">
+                    <h4 class="font-semibold text-gray-800">Jump Arena Thao Dien District 2 - Part Time Employee</h4>
+                    <ul class="list-disc list-inside space-y-2 ml-4 text-gray-700">
+                        <li>Organize group activities, team building, and physical games for students</li>
+                        <li>Lead and manage groups of participants, ensure safety, and create a positive atmosphere</li>
+                        <li>Develop leadership skills, observe group psychology, and handle situations flexibly</li>
+                    </ul>
+                </div>
             </section>
-
             <!-- Accumulated Knowledge Section -->
             <section>
                 <h3 class="text-xl font-bold text-navy-800 mb-4 flex items-center">
@@ -187,7 +220,20 @@
                     </div>
                 </div>
             </section>
+            
+            <div class="mt-10">
+                <h3 class=" font-bold  mb-4 flex items-center">
+                
+                <span class="flex-1 border-b-2 border-navy-200"></span>
+                <span class="text-xl mx-2  font-bold text-transparent bg-gradient-to-r from-navy-900 to-navy-400 bg-clip-text">
+                    THANK YOU FOR WATCHING
+                </span>
+                <span class="flex-1 border-b-2 border-navy-200"></span>
+
+            </h3>
+            </div>
         </div>
     </div>
+    
 </body>
 </html>
