@@ -1,151 +1,143 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Nguyễn Khuất Anh Duy</title>
-    <script src="https://cdn.tailwindcss.com"></script> 
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-    <style>
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-    </style>
+    <title>Nguyen Khuat Anh Duy - CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-r from-blue-200 via-purple-300 to-pink-300 bg-size-200 bg-pos-0 animate-[gradientBG_6s_infinite_alternate] text-gray-800">
-    <div class="max-w-3xl mx-auto my-10 bg-white shadow-lg rounded-lg overflow-hidden p-6">
-        <!-- Phần đầu -->
-        <div class="flex items-center gap-4 border-b pb-4">
-            <img src="./public/z6344591517584_3b091144c020a8fc5af90298ab418c4d.jpg" alt="Avatar" class="w-24 h-24 rounded-full border-4 border-blue-500">
-            <div>
-                <h1 class="text-3xl font-bold text-blue-600">Nguyễn Khuất Anh Duy</h1>
-                <h22 class=" font-semibold text-gray-600">Developer</h22>
+<body class="bg-gray-100">
+    <div class="min-h-screen md:flex">
+        <!-- Left Column - Personal Info -->
+        <div class="md:w-1/4 bg-gradient-to-b from-blue-900 to-blue-800 p-8 text-white">
+            <div class="text-center mb-8">
+                <!-- Replace 'avatar.jpg' with actual image path -->
+                <img src="./public/avatar.jpg" alt="Profile Photo" 
+                     class="w-full mx-auto border-4 border-blue-200 shadow-lg">
             </div>
-        </div>
-        
-        <!-- Thông tin liên hệ -->
-        <div class="py-4">
-            <p><strong>Email:</strong> <span class="text-blue-500">anhduynguyenkhuat@gmail.com</span></p>
-            <p><strong>Điện thoại:</strong> 0368 196 092</p>
-            <p><strong>Địa chỉ:</strong> 489/10, đường Đoàn Văn Bơ, Quận 4 , thành phố Hồ Chí Minhh</p>
-            <p><strong>Facebook:</strong> <a href="https://facebook.com/nkaduy" class="text-blue-500">facebook.com/nkaduy</a></p>
-        </div>
-        <!-- Mục tiêu nghề nghiệp -->
-        <div class="py-4">
-            <h2 class="text-2xl font-semibold text-gray-700 border-b pb-2">Mục tiêu nghề nghiệp</h2>
-            <p class="mt-2">Xây dựng, duy trì, phát triển và quản lý các hệ thống công nghệ nhằm tối ưu hóa hiệu suất và hỗ trợ hiệu quả hoạt động của doanh nghiệp</p>
-            <p class="mt-2">Tìm kiếm cơ hội làm việc trong môi trường chuyên nghiệp, nơi tôi có thể không ngừng học hỏi, trau dồi kỹ năng và phát triển năng lực một cách toàn diện.</p>
-            <p class="mt-2">Trong ba năm tới, tôi đặt mục tiêu tích lũy kiến thức chuyên sâu về công nghệ, nâng cao kỹ năng giải quyết vấn đề và hướng đến vai trò Solution Architect trong tương lai.</p>
-        </div>
-        
-        <!-- Kinh nghiệm làm việc -->
-        <div class="py-4">
-            <h2 class="text-2xl font-semibold text-gray-700 border-b pb-2">Kinh nghiệm làm việc</h2>
-            <div class="mt-3">
-                <h3 class="text-xl font-semibold text-blue-500">Lập trình viên giảng dạy - Young Programmers Club</h3>
-                <p class="text-sm text-gray-500">2023 - Hiện tại</p>
-                <ul class="list-disc list-inside mt-2">
-                    <li>Tham gia chuẩn bị bài giảng và hướng dẫn học viên phát triển kỹ năng lập trình.</li>
-                    <li>Hướng dẫn học viên xây dựng ứng dụng cơ bản bằng Python, ReactJS, HTML, CSS, JavaScript.</li>
-                    <li>Hướng dẫn học viên phát triển game 2D cơ bản với Scratch.</li>
-                    <li>Hợp tác thiết kế mô hình hệ thống, sơ đồ ERD, sơ đồ luồng dữ liệu (DFD), mô hình chức năng.</li>
-                </ul>
-            </div>
-        </div>
-        
-       <!-- Học vấn & Dự án -->
-        <div class="py-4">
-            <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2">Học vấn & Dự án</h2>
+
+            <h2 class="text-2xl font-bold mb-6 border-b-2 border-blue-300 pb-2">Personal Info</h2>
             
-            <div class="mt-3">
-                <h3 class="text-xl font-semibold text-blue-600">Đại học Công nghệ Sài Gòn</h3>
-                <p class="text-gray-700">Chuyên ngành: Công nghệ thông tin</p>
-                <h4 class=" font-semibold text-gray-600">Dự án tham gia :</h4>
-            </div>
-            <div class="mt-4">
-                <div class="ml-2">
-                    <div class="mt-3">
-                        <h4 class="font-semibold text-blue-600">Dự án website đặt may áo dài truyền thống</h4>
-                        <p class="text-sm text-gray-500">02/2024 - 03/2024</p>
-                        <p class="text-sm text-gray-600"><strong>Công nghệ:</strong> Next.js, Vercel, PostgreSQL, Prisma, RESTful API, React Native, Tailwind CSS, Giao Hàng Tiết Kiệm, VNPAY.</p>
-                        <ul class="list-disc list-inside text-gray-700 mt-2">
-                            <li>Thu thập và phân tích yêu cầu từ các bên liên quan.</li>
-                            <li>Thiết kế cơ sở dữ liệu trên PostgreSQL, sử dụng Prisma ORM để quản lý và truy vấn dữ liệu.</li>
-                            <li>Xây dựng hệ thống theo mô hình RESTful API, hỗ trợ Giao Hàng Tiết Kiệm và thanh toán qua VNPAY.</li>
-                            <li>Phát triển và triển khai website bằng Next.js trên Vercel.</li>
-                            <li>Thiết kế giao diện web với Tailwind CSS.</li>
-                            <li>Phát triển ứng dụng mobile bằng React Native.</li>
-                            <li>Viết tài liệu hướng dẫn kỹ thuật cho nhóm người dùng cuối.</li>
-                            <li>Kiểm thử và tối ưu hiệu suất UI.</li>
-                        </ul>
-                    </div>
-                    <div class="mt-3">
-                        <h4 class="font-semibold text-blue-600">Hệ thống điểm danh sinh viên đa phương thức (Face & QR)</h4>
-                        <ul class="list-disc list-inside text-gray-700 mt-2">
-                            <li>Phát triển hệ thống nhận diện khuôn mặt sử dụng Python.</li>
-                            <li>Ứng dụng vào điểm danh tự động cho sinh viên.</li>
-                            <li>Triển khai mô hình với OpenCV và thư viện Machine Learning.</li>
-                        </ul>
-                    </div>
-                    <div class="mt-3">
-                        <h4 class="font-semibold text-blue-600">Website cung cấp khóa học trực tuyến</h4>
-                        <p class="text-sm text-gray-500">08/2024 - 09/2024</p>
-                        <ul class="list-disc list-inside text-gray-700 mt-2">
-                            <li>Phân tích và thiết kế hệ thống quản lý thông tin.</li>
-                            <li>Phối hợp với nhóm thiết kế và backend để tích hợp tính năng website.</li>
-                        </ul>
-                    </div>
-                    <div class="mt-3">
-                        <h4 class="font-semibold text-blue-600">Phân tích thiết kế website quản lý bán hàng hải sản</h4>
-                        <p class="text-sm text-gray-500">08/2024 - 09/2024</p>
-                        <ul class="list-disc list-inside text-gray-700 mt-2">
-                            <li>Thu thập và phân tích yêu cầu từ các bên liên quan.</li>
-                            <li>Thiết kế giao diện người dùng với ReactJS và Ant Design.</li>
-                            <li>Viết tài liệu hướng dẫn kỹ thuật cho thành viên nhóm và người dùng cuối.</li>
-                            <li>Kiểm thử và tối ưu hiệu suất UI.</li>
-                        </ul>
-                    </div>
+            <div class="space-y-4">
+                <div>
+                    <p class="font-semibold">Date of Birth</p>
+                    <p>04/02/2002</p>
+                </div>
+                <div>
+                    <p class="font-semibold">Gender</p>
+                    <p>Male</p>
+                </div>
+                <div>
+                    <p class="font-semibold">Phone</p>
+                    <p>0368 196 092</p>
+                </div>
+                <div>
+                    <p class="font-semibold">Email</p>
+                    <a href="mailto:anhduynguyenkhuat@gmail.com" 
+                       class="hover:text-blue-200 transition-colors">anhduynguyenkhuat@gmail.com</a>
+                </div>
+                <div>
+                    <p class="font-semibold">Address</p>
+                    <p>489/10, Doan Van Bo Street,<br>Ward 13, District 4, HCMC</p>
+                </div>
+                <div>
+                    <p class="font-semibold">Github</p>
+                    <a href="https://github.com/NAD00400" 
+                       class="hover:text-blue-200 transition-colors">github.com/NAD00400</a>
                 </div>
             </div>
         </div>
 
-        <!-- Kỹ năng -->
-        <div class="py-4" x-data="skillsData">
-            <h2 class="text-2xl font-semibold text-gray-700 border-b pb-2">Kỹ năng</h2>
-            <ul class="mt-4 space-y-3">
-                <template x-for="(skill, index) in skills" :key="index">
-                    <li x-data="{ open: false }" class="bg-blue-50 p-3 rounded-lg">
-                        <button @click="open = !open" class="flex justify-between w-full text-blue-700 font-semibold">
-                            <span x-text="skill.name"></span>
-                            <span x-show="!open">+</span>
-                            <span x-show="open">−</span>
-                        </button>
-                        <p x-show="open" class="text-gray-600 text-sm mt-2" x-transition> 
-                            <span x-text="skill.description"></span>
-                        </p>
-                    </li>
-                </template>
-            </ul>
+        <!-- Right Column - Content -->
+        <div class="md:w-4/5 bg-white p-8">
+            <!-- Header -->
+            <div class="mb-12">
+                <h1 class="text-4xl font-bold text-blue-900 mb-2">Nguyen Khuat Anh Duy</h1>
+                <h2 class="text-2xl text-blue-700 font-semibold">Web Development Intern</h2>
+            </div>
+
+            <!-- Sections -->
+            <section class="mb-8">
+                <h3 class="text-xl font-bold text-blue-900 mb-4 border-b-2 border-blue-200 pb-2">TARGET</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    My goal is to become an IT professional in the financial sector, constantly learning and improving my skills to build optimal, secure and efficient solutions. I hope to contribute to the development of financial technology by applying new technologies, improving systems and creating sustainable values.
+                </p>
+            </section>
+
+            <section class="mb-8">
+                <h3 class="text-xl font-bold text-blue-900 mb-4 border-b-2 border-blue-200 pb-2">EDUCATION</h3>
+                <div class="space-y-4">
+                    <h4 class="font-semibold text-gray-800">Saigon Technology University (STU)</h4>
+                    <ul class="list-disc list-inside space-y-2 ml-4 text-gray-700">
+                        <li>Information Technology Engineering Program</li>
+                        <li>Elective subjects:
+                            <ul class="list-circle list-inside space-y-1 ml-6">
+                                <li>Web application programming with Apache/MySQL/PHP</li>
+                                <li>ASP.NET Core MVC & RESTful API development</li>
+                                <li>Basic AI applications for image recognition</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="mb-8">
+                <h3 class="text-xl font-bold text-blue-900 mb-4 border-b-2 border-blue-200 pb-2">WORK EXPERIENCE</h3>
+                <div class="space-y-4">
+                    <h4 class="font-semibold text-gray-800">Step Computer Academy Vietnam - Coding Teacher</h4>
+                    <ul class="list-disc list-inside space-y-2 ml-4 text-gray-700">
+                        <li>Teaching programming fundamentals (Python, Web Basics)</li>
+                        <li>Guiding students through practical projects</li>
+                        <li>Monitoring progress and providing support</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="text-xl font-bold text-blue-900 mb-4 border-b-2 border-blue-200 pb-2">SKILLS</h3>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Frontend</h4>
+                            <ul class="list-disc list-inside ml-4 text-gray-700">
+                                <li>React.js/Next.js</li>
+                                <li>Tailwind CSS</li>
+                                <li>TypeScript</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Backend</h4>
+                            <ul class="list-disc list-inside ml-4 text-gray-700">
+                                <li>Node.js (Express/NestJS)</li>
+                                <li>MongoDB/PostgreSQL</li>
+                                <li>RESTful API Design</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">DevOps</h4>
+                            <ul class="list-disc list-inside ml-4 text-gray-700">
+                                <li>Vercel Deployment</li>
+                                <li>Git/GitHub</li>
+                                <li>CI/CD Pipelines</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Tools</h4>
+                            <ul class="list-disc list-inside ml-4 text-gray-700">
+                                <li>VS Code</li>
+                                <li>Postman</li>
+                                <li>Figma</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <script>
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('skillsData', () => ({
-                    skills: [
-                        { name: "React", description: "Có kinh nghiệm phát triển ứng dụng Web, luôn cố gắng học hỏi và cải thiện." },
-                        { name: "JavaScript & TypeScript", description: "Kinh nghiệm làm việc với JavaScript và TypeScript, với mong muốn cải thiện và mở rộng kỹ năng." },
-                        { name: "Figma", description: "Có kỹ năng phát triển giao diện Web, hỗ trợ quá trình phát triển web giúp tối ưu thời gian phát triển phần mềm." },
-                        { name: "Node.js & Express.js", description: "Phát triển ứng dụng backend sử dụng Node.js và Express.js, luôn tìm kiếm cơ hội để nâng cao kỹ năng." },
-                        { name: "Cơ sở dữ liệu (MySQL, PostgreSQL, MongoDB)", description: "Quản lý và tối ưu hóa cơ sở dữ liệu, luôn sẵn sàng học hỏi và cải thiện." },
-                        { name: "Git & GitHub", description: "Sử dụng Git và GitHub để quản lý mã nguồn và làm việc nhóm, luôn cố gắng nâng cao hiệu quả công việc." },
-                        { name: "Docker", description: "Triển khai và quản lý ứng dụng với Docker và Kubernetes, tìm cách áp dụng các công nghệ mới vào công việc." },
-                        { name: "React Native", description: "Có kinh nghiệm phát triển ứng dụng di động đa nền tảng, luôn cố gắng học hỏi và cải thiện." },
-                        { name: "Spring & OOP", description: "Hiểu biết về Spring Framework và lập trình hướng đối tượng, không ngừng nâng cao kiến thức và kỹ năng." }
-                    ]
-                }));
-            });
-        </script>
     </div>
 </body>
 </html>
